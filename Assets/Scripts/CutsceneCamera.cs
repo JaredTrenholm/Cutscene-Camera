@@ -31,6 +31,7 @@ public class CutsceneCamera : MonoBehaviour
     {
         if (isInCutScene)
             CutSceneMovement();
+        Debug.Log(Mathf.PerlinNoise(this.transform.position.z, this.transform.position.y));
     }
 
     public void DebugMove()
